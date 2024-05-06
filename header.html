@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style/mainpage.css">
+</head>
+
+<body>
+
+<header id="mainHeader">
+	<div class="optionsHeader">
+        <a href="./index.html"><img src="./img/logo.png" alt="Logo da Empresa" class="logo"></a>
+            <nav id="headerNav" class="horizontal" >
+                <a id="navicon" href="#"><img src="./img/tf_navicon.png" alt="Menu Icon" class="menu-icon"></a>
+            </nav>
+    </div>
+</header>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const navicon = document.getElementById("navicon");
+    const navList = document.querySelector("#headerNav ul");
+
+    navicon.addEventListener("click", function () {
+        navList.classList.toggle("show");
+    });
+});
+</script>
+</body>
+</html>

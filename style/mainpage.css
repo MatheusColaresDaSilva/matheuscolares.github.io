@@ -1,0 +1,584 @@
+
+@charset "utf-8";
+
+@font-face {
+    font-family: GothamPro;
+    src: url('../fonts/GothamPro-BlackItalic.woff') format('woff'),
+    url('../fonts/GothamPro-Bold.ttf') format('truetype');
+   }
+
+
+/*
+   Author: Matheus Colares da Silva
+
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: GothamPro, Verdana, Geneva, sans-serif;
+    line-height: 1.6;
+}
+ /* --------------------------------------------------------------------------------- */
+
+header {
+    transition: height 0.4s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+header .optionsHeader {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    max-height: 200px;
+    transition: max-height 0.9s ease-in-out,
+                margin-left 0.9s ease-in-out,
+                margin-top 0.9s ease-in-out;
+    margin-right: auto;
+    margin-left: 5%; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#headerNav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+#headerNav ul li {
+    margin-right: 20px;
+    padding: 0.5rem;
+    margin: 0px 30px;
+    font-size: 15px;
+    transition: transform 0.2s ease; 
+}
+
+#headerNav ul li:hover {
+    transform: scale(1.5); 
+}
+
+#headerNav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.shrink {
+    top: 0;
+    padding: 20px;
+    position: fixed;
+    z-index: 1000;  
+}
+.shrink .logo {
+    max-height: 100px;
+    margin-left: 1%; 
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+}
+
+.shrink #headerNav ul li a {
+    padding: 5px 10px;
+    font-size: 15px;
+}
+ /* --------------------------------------------------------------------------------- */
+
+ .content {
+    display: flex;
+    align-items: flex-start; 
+}
+
+.imageContent {
+    margin-right: 20px; 
+}
+
+.imageContent img {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.textContent {
+    text-align: justify;
+}
+
+.textContent h1 {
+    color: black;
+    margin-top: 1%; 
+    margin-bottom: 10px; 
+}
+
+.textContent p {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px; 
+    margin-right: 20px;
+}
+
+a#navicon {
+    display: none;
+ }
+
+ /* --------------------------------------------------------------------------------- */
+
+#mystack {
+    margin: 50px 20px 50px;
+}
+
+#mystack h2 {
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+}
+
+.mystack-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(150px, 0.095fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.mystack-grid:not(:hover) .mystack-item {
+    filter: grayscale(0%);
+}
+
+.mystack-item {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.mystack-item:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.mystack-item:not(:hover) {
+    filter: grayscale(100%);
+}
+
+.mystack-item h3{
+    text-align: center;
+}
+
+.mystack-item img {
+    width: 100%;
+    height: auto;
+}
+
+ /* --------------------------------------------------------------------------------- */
+
+ #whatIamStudying {
+    margin: 50px 20px 50px;
+}
+
+#whatIamStudying h2 {
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+}
+
+.studying-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 0.095fr));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.studying-grid:not(:hover) .studying-item {
+    filter: grayscale(0%);
+}
+
+.studying-item {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.studying-item:hover {
+    filter: grayscale(0%);
+    transform: scale(1.02);
+}
+
+.studying-item:not(:hover) {
+    filter: grayscale(100%);
+}
+
+.studying-item h3{
+    text-align: center;
+}
+
+.studying-item img {
+    width: 100%;
+    height: auto;
+}
+
+ /* --------------------------------------------------------------------------------- */
+
+.workXpSecHed, .studiesSecHed {
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+}
+
+.workXp, .studiesXp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.grid-container {
+    flex: 0 0 50%; 
+}
+
+.grid-item-img {
+    width: 200px;
+}
+
+.text-section {
+    flex: 0 0 80%; 
+}
+
+.text-section h2, .text-section p {
+    color: #000; 
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+ /* --------------------------------------------------------------------------------- */
+
+.see-more-button {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.see-more-button img {
+    width: 80%;
+}
+
+.see-more-button img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.see-more-button:hover img {
+    transform: scale(1.1);
+}
+
+.yellow-line {
+    background-color: rgb(229, 229, 186);
+    padding: 50px 0;
+}
+
+.yellow-line img {
+    display: block;
+    width: 5%;
+    margin: 0 auto;
+}
+
+.social-buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-button {
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.social-button img {
+    width: 80px; 
+    height: 80px;
+}
+
+.social-button:hover img {
+    transform: scale(1.1);
+}
+    
+
+/* --------------------------------------------------------------------------------- */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+strong {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff0;
+}
+
+
+.address-footer {
+    font-family: GothamBook, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #A7A9AC;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: rgb(0, 0, 0);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* containertTimeLine around contentTimeLine */
+  .containerTimeLine {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .contentTimeLine h2 {
+      color: black;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* The circles on the timeline */
+  .containerTimeLine::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 63px;
+    background-color: white;
+    border: 4px solid #e5843a;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the containertTimeLine to the left */
+  .left {
+    left: 0;
+  }
+  
+  /* Place the containertTimeLine to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left containertTimeLine (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 110px;
+    border: medium solid rgb(0, 0, 0);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(0, 0, 0);
+  }
+  
+  /* Add arrows to the right containertTimeLine (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid rgb(0, 0, 0);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(0, 0, 0) transparent transparent;
+  }
+  
+  /* Fix the circle for containertTimeLines on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual contentTimeLine */
+  .contentTimeLine {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+
+@media (max-width: 428px) {
+    .imageContent {
+        width: 100%; 
+        margin-right: 0; 
+    }
+
+    .imageContent img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .textContent {
+        width: 100%; 
+        text-align: center;
+        margin-top: 20px; 
+    }
+
+    .textContent h1 {
+        margin-top: 10px;
+        margin-bottom: 5px; 
+        font-size: 24px; 
+    }
+
+    .textContent p {
+        margin-top: 10px; 
+        margin-right: 10px; 
+        font-size: 14px; 
+    }
+
+    .mystack-grid {
+        grid-template-columns: repeat(2, 0.5fr); 
+        gap: 10px;
+    }
+
+    .workXpSecHed {
+        font-size: 28px;
+    }
+
+    .workXp, .studiesXp {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .workXp p, .studiesXp p {
+        margin-top: 10px;
+        font-size: 14px; 
+    }
+
+    .content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .imageContent {
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .textContent {
+        text-align: center; 
+    }
+
+    .textContent h1 {
+        font-size: 24px;
+        margin-top: 5px; 
+        margin-bottom: 5px; 
+    }
+
+    .textContent p {
+        font-size: 14px; 
+        margin-top: 5px; 
+        margin-right: 0; 
+    }
+
+    .yellow-line> img {
+        display: block;
+        width: 25%;
+        margin: 0 auto;
+    }
+
+
+
+    /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+    }
+    
+    /* Full-width containers */
+    .container {
+    width: 50%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+    /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+    left: 60px;
+    border: medium solid rgb(0, 0, 0);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(0, 0, 0) transparent transparent;
+    }
+  
+    /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+    left: 15px;
+    }
+    
+    /* Make all right containers behave like the left ones */
+    .right {
+    left: 0%;
+    }
+}
