@@ -1,0 +1,51 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+strong {
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff0;
+}
+
+
+.address-footer {
+    font-family: GothamBook, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #A7A9AC;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
