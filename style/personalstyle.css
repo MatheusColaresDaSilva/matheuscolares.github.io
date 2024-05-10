@@ -39,6 +39,14 @@ body {
     margin-bottom: 10px; 
 }
 
+.a {
+    font-size: small;
+}
+
+.b {
+    font-size: xx-small;
+}
+
 .textContent p {
     color: black;
     font-family: 'Courier New', Courier, monospace;
