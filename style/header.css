@@ -87,13 +87,12 @@ header .optionsHeader {
     }
 
     #headerNav ul li {
-        font-size: 10px;
+        font-size: 2px;
     }
 
     .menu-icon {
         display: block;
         cursor: pointer;
-        font-size: 25px;
         position: absolute;
         top: 15px;
         right: 15px;
