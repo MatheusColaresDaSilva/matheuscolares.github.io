@@ -124,7 +124,7 @@ a#navicon {
 
 .studying-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 0.095fr));
+    grid-template-columns: repeat(3, minmax(150px, 0.095fr));
     gap: 1rem;
     justify-content: center;
 }
